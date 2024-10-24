@@ -4,7 +4,7 @@ it('should implements optimistic concurrency control', async () => {
   // Create a ticket
   const ticket = Ticket.build({
     title: 'title',
-    price: '20',
+    price: 20,
     userId: '123',
   })
   // Save the ticket
@@ -35,7 +35,7 @@ it('should increments the version number on multiple saves', async () => {
   // Create a ticket
   const ticket = Ticket.build({
     title: 'title',
-    price: '20',
+    price: 20,
     userId: '123',
   })
   // Save the ticket
