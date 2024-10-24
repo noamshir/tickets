@@ -23,7 +23,7 @@ global.signin = async () => {
 let mongo: any
 beforeAll(async () => {
   process.env.JWT_KEY = 'koko'
-  const mongo = await MongoMemoryServer.create()
+  mongo = await MongoMemoryServer.create()
   const mongoUri = mongo.getUri()
 
   await mongoose.connect(mongoUri, {})
